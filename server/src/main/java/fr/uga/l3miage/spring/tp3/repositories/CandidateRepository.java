@@ -11,7 +11,7 @@ import java.util.Set;
 @Repository
 public interface CandidateRepository extends JpaRepository<CandidateEntity,Long> {
 
-    Set<CandidateEntity> findAllByTestCenterEntityCode(TestCenterCode code);
+   Set<CandidateEntity> findAllByTestCenterEntityCode(TestCenterCode code);
 
     Set<CandidateEntity> findAllByCandidateEvaluationGridEntitiesGradeLessThan(double grade);
 
